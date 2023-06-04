@@ -21,7 +21,10 @@
                 </div> 
                 <nav>
                     <ul class="link">
-                        <li><a class="link-style-agency" href="#">Agencja</a></li>
+                        <li> 
+                            <a class="link-style-agency" href="./index.html">Agencja</a>  
+                            <div class="underscore"></div>
+                        </li>
                         <li><a class="link-style-portfolio" href="./portfolio.html">Portfolio</a></li>
                         <li><a class="link-style-contact" href="#">Kontakt</a></li> 
                     </ul> 
@@ -43,8 +46,8 @@
         <div class="container-first">
             <!--Szara sekcja z przyciskiem-->  
             <h1 class="large-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-            <button class="bth1" type="button">Zamów usługe</button>
-        </div> 
+            <button class="bth1" type="button" data-modal-open>Zamów usługe</button>
+        </div>  
         <div class="container-second">
         <!--Nasze atuty--> 
             <ul class="list-text">
@@ -79,29 +82,44 @@
         <!--Czym się zajmujemy  bloki ze zdjęciami-->
             <h2 class="expert">Czym się zajmujemy</h2>
             <ul class="list-expert"> 
-                <li class="list-expert-img"> 
+                <li class="list-expert-img">  
+                    <div class="app">
                     <img  
                         src="images/images1/box1.jpg"  
                         alt="programista piszący kod na klawiaturze"  
                         width="370"  
                         height="294" 
-                    /> 
+                    />   
+                    <div class="app-1"> 
+                        <p>APLIKACJE KOMPUTEROWE</p>
+                    </div>
+                    </div>
                 </li>
-                <li class="list-expert-img"> 
+                <li class="list-expert-img">  
+                    <div class="app">
                     <img  
                         src="images/images1/box2.jpg"  
                         alt="kobieta testuje aplikacje na telefonie"  
                         width="370" 
                         height="294" 
-                    /> 
-                </li>
-                <li class="list-expert-img"> 
+                    />   
+                    <div class="app-1">
+                        <p>APLIKACJE MOBILNE</p>
+                    </div>
+                    </div>
+                </li> 
+                <li class="list-expert-img">  
+                    <div class="app">
                     <img  
                         src="images/images1/box3.jpg"  
                         alt="grafik wybierający kolor na tablecie"  
                         width="370"  
                         height="294" 
-                    /> 
+                    />  
+                    <div class="app-1">
+                        <p>ROZWIĄZANIA GRAFICZNE</p>
+                    </div>
+                    </div>
                 <li>
             </ul> 
         <!--Nasz zespół jest listą?-->
@@ -339,5 +357,11 @@
                 </div> 
         </div>
     </footer>
-</body>  
+</body> 
+    <div id="modal-backdrop"  class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-bth" data-modal-close>x</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </html>
