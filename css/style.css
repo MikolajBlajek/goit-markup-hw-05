@@ -62,10 +62,13 @@
  
 .link-style-agency:hover, 
 .link-style-portfolio:hover,
-.link-style-contact:hover, 
+.link-style-contact:hover,  
+.hover-header-mail:hover, 
+.hover-header-phone:hover, 
 .link-contact-mail-header:hover, 
-.link-contact-phone-header:hover {  
-    color: #2196F3;
+.link-contact-phone-header:hover{  
+    color: #2196F3; 
+    fill: #2196F3;
 } 
  
 .bth1 { 
